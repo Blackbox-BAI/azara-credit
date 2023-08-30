@@ -1,0 +1,63 @@
+models:
+  gpt-3.5-turbo:
+    encoding: gpt-3.5-turbo
+    cost: 0.002
+    prompt_cost_per_token: 0.002
+  gpt-4-8k:
+    encoding: gpt-4
+    cost: 0.003
+    prompt_cost_per_token: 0.003
+  gpt-4-32k:
+    encoding: gpt-4
+    cost: 0.006
+    prompt_cost_per_token: 0.006
+
+integrations:
+  twilio_whatsapp:
+    utility:
+      conversation: 0.02
+      message: 0.005
+    service:
+      conversation: 0.0022
+      message: 0.005
+
+
+# https://www.pinecone.io/pricing/
+pinecone_cloud_providers:
+  aws:
+    s1:
+      x1:
+        cost_per_hour: 0.0960
+      x2:
+        cost_per_hour: 0.1920
+      x4:
+        cost_per_hour: 0.3840
+      x8:
+        cost_per_hour: 0.7680
+  gcp:
+    s1:
+      x1:
+        cost_per_hour: 0.1110
+      x2:
+        cost_per_hour: 0.2220
+      x4:
+        cost_per_hour: 0.4440
+      x8:
+        cost_per_hour: 0.8880
+  azure:
+    s1:
+      x1:
+        cost_per_hour: 0.1110
+      x2:
+        cost_per_hour: 0.2220
+      x4:
+        cost_per_hour: 0.4440
+      x8:
+        cost_per_hour: 0.8880
+
+
+
+
+
+
+
