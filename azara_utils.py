@@ -73,7 +73,8 @@ def count_tokens_return_length_price(text: str, model: str) -> Tuple[int, float]
 #     # Convert total cost to Azara Credit (assuming 1:1 conversion for now)
 #     return total_cost
 
-def calculate_azara_credit(number_words, pinecone_pods, pinecone_duration_hours, model, cloud_provider, storage_type, instance_type):
+def calculate_azara_credit(number_words, pinecone_pods, pinecone_duration_mins, model, cloud_provider, storage_type, instance_type):
+    pinecone_duration_hours = pinecone_duration_mins / 60
     if model not in config['models']:
         raise ValueError("Invalid model. Choose either gpt-4-8k, gpt-4-32k or gpt-3.5-turbo.")
     if cloud_provider not in config['pinecone_cloud_providers']:
