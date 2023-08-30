@@ -15,12 +15,6 @@ Features
 -  Token Count and Price Estimation: A function that estimates the number of tokens and the price for a given text and model.
 - Margin Estimation: A function that estimates the margin given the Azara credit price and the price of the service.
 
-Requirements
-------------
-
-- Python 3.6+
-- Streamlit
-- tiktoken
 
 Installation
 -----------------------------
@@ -32,12 +26,8 @@ Usage
 
 ### Web Application
 
-Run the Streamlit application by executing the following command:
+Run the Streamlit local application by executing the following command:
 
-```streamlit run calculation.py```
+```streamlit run Homepage.py```
 
-### Cloud Deploy
 
-The application is deployed on Streamlit Cloud on branch master. You can access it via the following link:
-
-https://azara-credit-calculator.streamlit.app/
