@@ -84,7 +84,7 @@ if st.button("Estimate Cost"):
                     "Total Tokens": total_tokens,
                 })
 
-            pinecone_cost_per_hour = 0.0960  # change this based on your config
+            pinecone_cost_per_hour = 0.111  # change this based on your config
             aws_cost_per_hour = 1.5
             total_cost_per_hour = (total_cost) + (pinecone_cost_per_hour) + aws_cost_per_hour
 

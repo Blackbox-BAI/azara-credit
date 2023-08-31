@@ -27,13 +27,13 @@ pinecone_cloud_providers:
   aws:
     s1:
       x1:
-        cost_per_hour: 0.0960
+        cost_per_hour: 0.111
       x2:
-        cost_per_hour: 0.1920
+        cost_per_hour: 0.222
       x4:
-        cost_per_hour: 0.3840
+        cost_per_hour: 0.444
       x8:
-        cost_per_hour: 0.7680
+        cost_per_hour: 0.888
   gcp:
     s1:
       x1:
