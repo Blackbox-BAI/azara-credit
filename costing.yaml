@@ -21,8 +21,6 @@ integrations:
       conversation: 0.0022
       message: 0.005
 
-
-# https://www.pinecone.io/pricing/
 pinecone_cloud_providers:
   aws:
     s1:
